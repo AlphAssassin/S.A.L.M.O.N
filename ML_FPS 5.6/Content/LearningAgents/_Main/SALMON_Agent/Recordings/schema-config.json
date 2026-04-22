@@ -1,0 +1,138 @@
+{
+	"ObservationSchema":
+	{
+		"VectorSize": 11,
+		"EncodedSize": 11,
+		"Type": "And",
+		"Elements":
+		{
+			"Ammo":
+			{
+				"VectorSize": 1,
+				"EncodedSize": 1,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 0
+			},
+			"CanSee":
+			{
+				"VectorSize": 1,
+				"EncodedSize": 1,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 1
+			},
+			"EnemyAngle":
+			{
+				"VectorSize": 1,
+				"EncodedSize": 1,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 2
+			},
+			"EnemyDist":
+			{
+				"VectorSize": 1,
+				"EncodedSize": 1,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 3
+			},
+			"EnemyVel":
+			{
+				"VectorSize": 3,
+				"EncodedSize": 3,
+				"Type": "Continuous",
+				"Num": 3,
+				"Index": 4
+			},
+			"Health":
+			{
+				"VectorSize": 1,
+				"EncodedSize": 1,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 5
+			},
+			"SelfVel":
+			{
+				"VectorSize": 3,
+				"EncodedSize": 3,
+				"Type": "Continuous",
+				"Num": 3,
+				"Index": 6
+			}
+		}
+	},
+	"ActionSchema":
+	{
+		"VectorSize": 8,
+		"DistributionSize": 12,
+		"EncodedSize": 12,
+		"ModifierSize": 19,
+		"Type": "And",
+		"Elements":
+		{
+			"Fire":
+			{
+				"VectorSize": 2,
+				"DistributionSize": 2,
+				"EncodedSize": 2,
+				"ModifierSize": 3,
+				"Type": "DiscreteExclusive",
+				"Num": 2,
+				"Index": 0
+			},
+			"MoveForward":
+			{
+				"VectorSize": 1,
+				"DistributionSize": 2,
+				"EncodedSize": 2,
+				"ModifierSize": 3,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 1
+			},
+			"Pitch":
+			{
+				"VectorSize": 1,
+				"DistributionSize": 2,
+				"EncodedSize": 2,
+				"ModifierSize": 3,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 2
+			},
+			"Reload":
+			{
+				"VectorSize": 2,
+				"DistributionSize": 2,
+				"EncodedSize": 2,
+				"ModifierSize": 3,
+				"Type": "DiscreteExclusive",
+				"Num": 2,
+				"Index": 3
+			},
+			"Strafe":
+			{
+				"VectorSize": 1,
+				"DistributionSize": 2,
+				"EncodedSize": 2,
+				"ModifierSize": 3,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 4
+			},
+			"Turn":
+			{
+				"VectorSize": 1,
+				"DistributionSize": 2,
+				"EncodedSize": 2,
+				"ModifierSize": 3,
+				"Type": "Continuous",
+				"Num": 1,
+				"Index": 5
+			}
+		}
+	}
+}
